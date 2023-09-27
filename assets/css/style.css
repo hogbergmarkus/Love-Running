@@ -1,4 +1,4 @@
-/* Google Fonts import */
+/* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 /* Asterisk wildcard selector to override default styles added by the browser */
@@ -16,7 +16,7 @@ body {
     /* Generic project styles */
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
-}   
+}
 
 /* Header */
 header {
@@ -69,7 +69,7 @@ nav {
     top: 100%;
 }
 
-/* Nav Toggle */
+/* Nav toggle */
 #nav-toggle:checked~nav {
     display: block;
 }
@@ -123,8 +123,17 @@ footer {
         line-height: 75px;
         margin: 0 0.5rem;
     }
-    /*  */
-    /* Push main content down to accomodate larger header */
-    
 
+    /* Main content */
+    main {
+        /* Push main content down to accommodate larger header */
+        margin-top: 79px;
+    }
+}
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover{
+        border-bottom: 1px solid #3a3a3a;
+    }
 }
